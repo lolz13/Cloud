@@ -16,7 +16,7 @@ Click the bucket name(source bucket)
 (source bucket)- Go to properties, at last, choose edit static hosting- enable that.
 Go to management listed above 
 Under replication, rules click create replication rule
-Enter the rule name, under destination click on browse s3 and choose the source bucket that you have created
+Enter the rule name, under destination click on browse s3 and choose the destination bucket that you have created
 Under the IAM role choose a new role
 Then click on save.
 If you go destination bucket, here you can see the file that you have uploaded in the source destination. 
