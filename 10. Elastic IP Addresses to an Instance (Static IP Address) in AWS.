@@ -30,15 +30,12 @@
 
 16. Leave as it is and click allocate. The elastic IP address was allocated successfully. 
 
-17. Then go to instance it’s staring is running
+17. Click the elastic IP and go to  actions and click associate elastic IP address, in this choose the running instances, then click associate
 
-18. Click the elastic IP and go to  actions and associate an IP address to allocate the IP address for the instances
 
-19. Click on instances it shows the instances and set the private IP address and click on associate
+18. IP address has been associated successfully
 
-20. IP address has been associated successfully
+19. then you go to the instances if you click the currently running instances, the elastic IP address is assigned.
 
-21. then you go to the instances to check the IP address has been changed. 
-
-22. you terminate the instances.
+20. you terminate the instances.
 
