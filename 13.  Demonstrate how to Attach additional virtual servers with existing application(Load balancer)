@@ -4,19 +4,20 @@ Create a new key pair
 Click on download key pair
 click on launch instances
 Look on the availability Zone for current running instances
-Choose traget groups in the side menu
+Choose target groups in the side menu
 In the target group choose the instance, enter the target group name as any
 Click on next, choose the instance 
 Click include as pending below
 Then click on create target group
 Choose load balancer in the side menu
-Click Create load balancer
+Click Create a load balancer
 Choose application load balancer, click create
 Type the load balancer name as any
 Choose the minimum 2 availability zone(one as same as instance zone)
-In listeners and routing, choose the trager group that you have created now
-Then click on  create load balancer
-load balancer is created successfully
+In listeners and routing, choose the traget group that you have created now
+Then click on  create a load balancer
+The load balancer is created successfully
+
 
 
 
