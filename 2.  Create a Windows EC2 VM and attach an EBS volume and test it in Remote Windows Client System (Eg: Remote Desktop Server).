@@ -4,30 +4,31 @@ Click on launch instances to create a instances
 Then choose Microsoft Windows Server 2012 R2 base  select that
 Leave as it is and click  configure
 No need to change anything then click on add storage 
-The  click add tags
+Then  click add tags
 Then configure settings
 leave as it is click review and launch
 Then click on launch instances
 Create the new key pair(name the key pair as per your convenience) and click download key pair.
 Then click on launch instances
-Instances is launched successfully
+Instance is launched successfully
 You need to wait for some time to start running the instances state it takes some time, wait till 2/2 checks passed under status check.
-Instance state turned into  running, Note the availability zone for the currently running instance.
+Instance state turned into running, Note the availability zone for the currently running instance.
 Choose volume in the left menu
-Create volume - choose the availability zone correctly for the instance running , click create volume
-After creating, right-click created volume and click attach volume , inside this add currently running instances in instance, then click attach volume
+Create volume - choose the availability zone correctly for the instance running, click create volume
+After creating, right-click created volume and click attach volume, inside this add currently running instances in an instance, then click attach a volume
 Go to instances and  click on current instances and give connect in the top menu
 Here choose the RDP client, download the remote desktop file
 Then click get password
-Browse your key pair from downloaded file and upload it
+Browse your key pair from the downloaded file and upload it
 Then click on decrypt password
-Then copy-paste your password in notepad
+Then copy-paste your password into notepad
 Then you open the download file from download(remote desktop file)
 Then click connect
 Enter the password from notepad then click ok
 Click yes
 Wait for a few minutes to start the remote application it will take some time
-Remote desktop  server is successfully created and opened
+The remote desktop  server is successfully created and opened
 Then terminate the remote server 
 Terminate the current instance
+
 
