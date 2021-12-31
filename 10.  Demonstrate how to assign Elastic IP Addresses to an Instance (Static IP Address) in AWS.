@@ -1,41 +1,19 @@
-1. First login into the AWS console. Click on AWS console
-
-2. Form this page  choose the EC2 services you will navigate to the instances page
-
-3. here click on launch Instances and create a new instance
-
-4. Select the Amazon Linux 2 AMI
-
-5. Leave as it is on this page
-
-6. You no  need to change any settings leave as it is
-
-7. Leave storage as it is
-
-8. You can add tags keep key as name and value as EC2-11
- 
-9. You can change the security group name and description then click on review and launch
-
-10. then click on the launch button
-
-11. Create a new key pair  and click on launch instances
-
-12. Then the instance is launched successfully
-
-13. Let wait for a few minutes to start the instances
-
-14.  Then go to the elastic IPS in the left menu
-
-15. Here click on allocate an IP address. 
-
-16. Leave as it is and click allocate. The elastic IP address was allocated successfully. 
-
-17. Click the elastic IP and go to  actions and click associate elastic IP address, in this choose the running instances, then click associate
-
-
-18. IP address has been associated successfully
-
-19. then you go to the instances if you click the currently running instances, the elastic IP address is assigned.
-
-20. you terminate the instances.
+First login into the AWS console. Click on AWS console
+Form this page  choose the EC2 services you will navigate to the instances page
+here click on launch Instances and create a new instance
+Choose an Amazon machine image as Amazon Linux 2 AMI( 1st in the list)
+Leave as it is and go to the next steps(tags, storage, configure security)
+Create a new key pair
+Click Download key-pair
+Click on launch instance.
+Then the instance is launched successfully
+Let wait for a few minutes to start the instances
+Then go to the elastic IPS in the left menu
+Here click on allocate Elastic IP address. 
+Leave as it is and click allocate. 
+The elastic IP address was allocated successfully. 
+Click the created elastic IP and go to  actions and click associate elastic IP address, in this choose the currently running instances, then click associate
+IP address has been associated successfully
+Then you go to the instances if you click the currently running instances, the elastic IP address is assigned.
+Terminate the instances.
 
