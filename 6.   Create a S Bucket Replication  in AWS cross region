@@ -16,13 +16,15 @@ Create a bucket only, no need to upload any files.
 Click the bucket name(source bucket)
 (Source bucket) Go to management listed above 
 Under replication, rules click create replication rule
-Enter the rule name(any name as per your convenience), under destination click on browse s3 and choose the destination bucket that you have created
+Enter the rule name(any name as per your convenience), under destination click on browse s3, and choose the destination bucket that you have created
 Click choose path
-Under the IAM role choose create new role from dropdown menu
+Under the IAM role choose to create a new role from the dropdown menu
 Then click on save.
-Go to destination bucket
-Wait for few minutes, click refresh
+Go to a destination bucket
+Wait for a few minutes, click refresh
 Here you can see the file that you have uploaded in the source destination. 
+
+
 
 
 
