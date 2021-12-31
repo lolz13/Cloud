@@ -7,7 +7,7 @@ Enable the bucket versioning
 Then click on create a bucket
 Click on the bucket name
 In the objects, tab click on the upload
-In upload click on add files or add a folder for your HTML file.
+In upload click on add files or add a folder for your HTML file.(https://www.geeksforgeeks.org/html-course-first-web-page-printing-hello-world/)
 Click on upload
 Navigate to properties at the end there is static web page hosting, enable that.
 Index document name should be the same as the file we uploaded (file name.html)
