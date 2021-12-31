@@ -1,22 +1,22 @@
- Select the VPC on your services page
- Click on launch VPC wizard
-  Click on create VPC. 
- Enter the VPC name as private VPC, IPV4 CIDR block as 10.0.0.0/24
- In IPV4 CIDR block choose amazon provided IPV6 CIDR block
-. Click on create VPC
- Then VPC will be successfully created
+Select the VPC on your services page
+Go to Youe VPCs
+Click on create VPC. 
+Enter the VPC name as private VPC, IPV4 CIDR block as 10.0.0.0/24
+In IPV6 CIDR block choose amazon provided IPV6 CIDR block
+Click on create VPC
+Then VPC will be successfully created
 Open the subnet option
-9. Then click on create a subnet.
-10. Select the created VPC.
-11.   Name the subnet as per your convenience,
-10 Check in the IPV6 only
-11. In the IPV6 CIDR block in the second line there is space to enter a number, enter 04
-12. Then click on add subnet to create add more subnets, here in the IPV6 block enter the number 06
-13. Then click create a subnet.
-14. Go to the internet gateway, click on create internet gateway.
-15. Enter the name, then click on create internet gateway.
-16. Right-click on the created internet gateway, click on attach to VPC
-17. Select the VPC that you have created.
-18. Then click on attach internet gateway
+Then click on create a subnet.
+Select the created VPC.
+Name the subnet as per your convenience,
+Check in the IPV6 only
+In the IPV6 CIDR block in the second line there is space to enter a number, enter 04
+Then click on add subnet to create add more subnets, here in the IPV6 block enter the number 06
+Then click create a subnet.
+Go to the internet gateway, click on create internet gateway.
+Enter the name, then click on create internet gateway.
+Right-click on the created internet gateway, click on attach to VPC
+Select the VPC that you have created.
+Then click on attach internet gateway
 
 (Show the internet gateway page as output to mam)
