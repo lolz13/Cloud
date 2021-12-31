@@ -14,12 +14,12 @@ sudo puttygen key.pem -o key.ppk -O private
 sudo puttygen key.pem -o key.ppk -O public
 sudo  chmod   777 key.ppk
 Putty
-Copy the Public IPV4 address for current running instance
-Then open the putty and paste the public IP4 address for current running instance in Host name
+Copy the Public IPV4 address for a currently running instance
+Then open the putty and paste the public IP4 address for the currently running instance in Hostname
 In the left menu click SSH, choose Auth, browse the saved file(.ppk) in downloaded and click open.
 Then a terminal is opened 
-Wair for few minuter, click accept
-enter this command : ec2-user 
+Wait for a few minutes, click accept
+enter this command: ec2-user 
 
 
 After connecting the instance in putty
@@ -31,5 +31,7 @@ sudo systemctl enable --now mariadb
 sudo mysql secure installation
 sudo mysql -u root
 Use mysql
+
+
 
 
