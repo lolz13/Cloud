@@ -1,20 +1,26 @@
-1. Select the VPC on your services page
-2. Click on launch VPC wizard
-3.  Click on create VPC. 
-4. Enter the VPC name as private VPC, IPV4 CIDR block as 10.0.0.0/24
-5. In IPV4 CIDR block choose amazon provided IPV6 CIDR block
-6. Click on create VPC
-7. Then VPC will be successfully created
-8. Open the subnet option
-9. Then click on create a subnet.
-10. Select the created VPC.
-11.   Name the subnet as per your convenience,
-10 Check in the IPV6 only
-11. In the IPV6 CIDR block in the second line there is space to enter a number, enter 04
-12. Then click on add subnet to create add more subnets, here in the IPV6 block enter the number 06
-13. Then click create a subnet.
-14. Then go to the routing table, enter the name, add the VPC that you have created. Then click on create router table.
-15.  Successfully connected four subnets to the routing table with a VPC.
-16. In route table in down go to the subnet association, here you see the attached subnet( output shown to mam)
+Select the VPC on your services page
+Go to Your VPCs
+Click on create VPC. 
+Enter the VPC name as private VPC, IPV4 CIDR block as 10.0.0.0/24
+In IPV6 CIDR block choose amazon provided IPV6 CIDR block
+Click on create VPC
+Then VPC will be successfully created
+Open the subnet option
+Then click on create a subnet.
+Select the created VPC.
+Name the subnet as per your convenience,
+Check in the IPV6 only
+In the IPV6 CIDR block in the second line, there is space to enter a number, enter 04
+Then click on add subnet to create add more subnets, here in the IPV6 block enter the number 06
+Then click on add subnet to create add more subnets, here in the IPV6 block enter the number 08
+Then click on add subnet to create add more subnets, here in the IPV6 block enter the number 10
+Then click create a subnet.
+Then go to the route table in the left menu
+Click create a route table
+Enter the name as per your wish, In VPC select the VPC that you have created now.
+Then click on create router table.
+Successfully connected four subnets to the routing table with a VPC.
+In route table in down go to the subnet association, here you see the attached subnet( output shown to mam)
+
 
 
