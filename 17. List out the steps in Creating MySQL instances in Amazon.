@@ -1,7 +1,9 @@
 Login into the AWS console 
 Click on launch instances, then click next for further steps like tags, storage, configure, etc.
-Create a new key pair and click on launch instances
-While launching download the .pem file
+Create a new key pair 
+Click on download key pair
+click on launch instances
+
 In Ubuntu to open putty:
 Ctrl +alt+t  
 
@@ -12,9 +14,12 @@ sudo puttygen key.pem -o key.ppk -O private
 sudo puttygen key.pem -o key.ppk -O public
 sudo  chmod   777 key.ppk
 Putty
-Then open the putty and enter the IP address of created instances.
-In the left menu click SSH, choose Auth, browse the saved file and click open.
-Then a terminal is opened  ec2-user enter this command.
+Copy the Public IPV4 address for current running instance
+Then open the putty and paste the public IP4 address for current running instance in Host name
+In the left menu click SSH, choose Auth, browse the saved file(.ppk) in downloaded and click open.
+Then a terminal is opened 
+Wair for few minuter, click accept
+enter this command : ec2-user 
 
 
 After connecting the instance in putty
@@ -22,7 +27,7 @@ After connecting the instance in putty
 ec2-user
 sudo yum update -y && sudo yum install mysql-server -y
 sudo yum install mariadb-server -y
- sudo systemctl enable --now mariadb
+sudo systemctl enable --now mariadb
 sudo mysql secure installation
 sudo mysql -u root
 Use mysql
