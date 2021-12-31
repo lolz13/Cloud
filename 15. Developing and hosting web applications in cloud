@@ -8,27 +8,34 @@ Then click on create a bucket
 Click on the bucket name
 In the objects, tab click on the upload
 In upload click on add files or add a folder for your HTML file.
+Go to the link copy  the html code(https://www.geeksforgeeks.org/html-course-first-web-page-printing-hello-world/)
+open the notepad and paste the code, save it has .html file
 Click on upload
+Go to the destination address
 Navigate to properties at the end there is static web page hosting, enable that.
 Index document name should be the same as the file we uploaded (file name.html)
 In error, document enter it has error.html
 Click save changes
 Click on permission, choose bucket policy, click edit
 Edit this code in that, in resources enter the arn value available above( in last add /* at the end)
+Change principal as remove the {} and enter "*"
+Change Action, remove [] to "s3.GetObject"
+Change Resources, remove [] and copy the Bucket ARN and paste inside resource at the end put /*.
 {
-"Version": "2012-10-17",
-"Statement": [
-{
-"Sid": "PublicReadGetObject",
-"Principal": "*",
-"Effect": "Allow",
-"Action": “s3:GetObject”,
-"Resource": “arn:aws:s3:::vivni//*”
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "Statement1",
+			"Principal":"*",
+			"Effect": "Allow",
+			"Action": "s3:GetObject",
+			"Resource": "arn:aws:s3:::lashyasou/*"
+		}
+	]
 }
-]
-}
+
+
 
 Then click save changes
 Go to properties, at last, there is a link open that.
-The static web page is hosted.
-
+The static web page is hosted
