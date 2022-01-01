@@ -1,45 +1,73 @@
+
+
 Login into the AWS console 
+
+Choose EC2 in the service. 
+
+In the left menu go to key pair
+
+Click on create key pair
+
+Enter the key pair name as any, in file format change to  .ppk and save it. The ppk file will be downloaded
+
 Click on launch instances
+
 Select  AMI machine Ist one
 Click on next, configure instance details
+
 In step 3: configure instance details, in subnet column choose any one of the subnet in the dropdown menu
+
 Then cick next add storage
+
 Then click next add tags
+
 Then click next configure security group
+
 In step 6: configure security group, click add rule, add type HTTP in source change the custom as anywhere (choose in the drop down menu) for both SSH and HTTP
+
 Click review and launch
-Create a new key pair 
-Click on download key pair
+
+Choose the existing key pair, as you save before 
+
 click on launch instances
+
 Look on the availability Zone for current running instances
+
 Choose target groups in the side menu
+
 In the target group choose the instance, enter the target group name as any
+
 Click on next, choose the instance 
+
 Click include as pending below
+
 Then click on create target group
 Choose load balancer in the side menu
+
 Click Create a load balancer
 Choose application load balancer, click create
+
 Type the load balancer name as any
 Choose the minimum 2 availability zone(one as same as instance zone)
 In listeners and routing, choose the target group that you have created now
+
 Then click on  create a load balancer
 The load balancer is created successfully
+
 
 Open the putty:
 In Ubuntu to open putty:(commands)
 Ctrl +alt+t  
 sudo apt install putty-tools
-cd Downloads
-sudo puttygen key.pem -o key.ppk -O private
-sudo puttygen key.pem -o key.ppk -O public
-Sudo chmod  777 key.ppk
 Putty
 Copy the Public IPV4 address for the currently running instance
 
-Then open the putty and enter the Public IPV4 address of the currently created instance.
+Then open the putty and enter the Public IPV4 address of the currently created instance
+
 In the left menu click SSH, choose Auth, browse the saved file(.ppk) in downloads and click open.
+
 The terminal is open enter accept in pop up
+
 Then enter the command in terminal  ec2-user
 
 Commands in putty:
@@ -62,9 +90,5 @@ Then click Save.
 Then open the public IPV4 DNS in the browser, the html file loaded was displayed
 
 
- #!bin/bash
-yum install httpd -y
-service httpd start
-cd /var/www/html
-echo ‘welcome!’> /var/www/html/index.html  
+
 
