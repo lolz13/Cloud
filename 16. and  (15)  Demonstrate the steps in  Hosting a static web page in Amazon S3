@@ -19,7 +19,7 @@ Click save changes
 Click on permission, choose bucket policy, click edit
 Edit this code in that, in resources enter the arn value available above( in last add /* at the end)
 Change principal as remove the {} and enter "*"
-Change Action, remove [] to "s3.GetObject"
+Change Action, remove [] to "s3:GetObject"
 Change Resources, remove [] and copy the Bucket ARN and paste inside resource at the end put /*.
 {
 	"Version": "2012-10-17",
