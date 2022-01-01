@@ -1,22 +1,24 @@
 Login into AWS console using the root user
-Sign in to the account
-Choose IAM in services
-Go to users
-Create a user, add click on that
-In that go to security credentials, there is an assigned MFA device, click manage
+In the top bar, click on your name
+Under this click security credentials 
+In this choose multi-factor authentication(MFA)
+Click on activate MFA
 Choose virtual MFA and click create
 Then click on show QR code
 Install the authentication app on your android mobile
 Scan the QR code
 Enter the code displayed in the authentication app(MFA Code 1 And MFA Code 2)
+After scanning the QR code, it displays a code enter that code in MFA code 1
+Then wait for a few minutes, the current code disappears and a new code will appear, enter this code in MFA code 2
 Then click on assign MFA
-In security credentials copy the user ARN code, copy and paste it in notepad.
-In the console, password click on manage, set password as custom password and set a password. 
+MFA assigned successfully.
 Then sign out from the console
-Then Log in using IAM user, user ARN that you have copied
-Click on next
-Enter the IAM user name
-And enter the password that you have created.
-Enter the MFA code displayed in the authentication app, click submit
+Then click Login back
+Log in using the root account.
+While login you will be asked MFA code
+Go to the authentication app on your mobile, enter the code displayed in your app.
+Click on submit.
+Multi-factor authentication is successfully added to your account.
+
 
 
