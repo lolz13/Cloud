@@ -1,18 +1,26 @@
-Login into the AWS console 
-Click on launch instances, then click next for further steps like tags, storage, configure, etc.
-Create a new key pair 
-Click on download key pair
-click on launch instances
+Login into the AWS console
+
+Choose the EC2 instances
+
+In the left menu go to key pair
+
+Click on create key pair
+
+Enter the key pair name as any, in file format change to  .ppk and save it. The ppk file will be downloaded
+
+Choose an Amazon machine image as Amazon Linux 2 AMI( 1st in the list) 
+
+Leave as it is and go to the next steps(tags, storage, configure security)
+
+Choose the existing key pair, as you save before 
+
+Click on launch instance.
 
 In Ubuntu to open putty:
 Ctrl +alt+t  
 
 sudo apt install putty-tools
 
-cd Downloads
-sudo puttygen key.pem -o key.ppk -O private
-sudo puttygen key.pem -o key.ppk -O public
-sudo  chmod   777 key.ppk
 Putty
 Copy the Public IPV4 address for a currently running instance
 Then open the putty and paste the public IP4 address for the currently running instance in Hostname
