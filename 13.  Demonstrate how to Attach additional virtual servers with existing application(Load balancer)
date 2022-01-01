@@ -1,5 +1,12 @@
 Login into the AWS console 
-Click on launch instances, then click next for further steps like tags, storage, configure, etc.
+Select  AMI machine Ist one
+Click on next, configure instance details
+In step 3: configure instance details, in subnet column choose any one of the subnet in the dropdown menu
+Then cick next add storage
+Then click next add tags
+Then click next configure security group
+In step 6: configure security group, click add rule, add type HTTP in source change the custom as anywhere (choose in the drop down menu) for both SSH and HTTP
+Click review and launch
 Create a new key pair 
 Click on download key pair
 click on launch instances
@@ -14,9 +21,16 @@ Click Create a load balancer
 Choose application load balancer, click create
 Type the load balancer name as any
 Choose the minimum 2 availability zone(one as same as instance zone)
-In listeners and routing, choose the traget group that you have created now
+In listeners and routing, choose the target group that you have created now
 Then click on  create a load balancer
 The load balancer is created successfully
+
+
+
+If mam ask to show healthy in target group
+     - Go to the target groups in left menu
+      - Click on the created target group 
+        - In that, if you scrolls down, in total targets it shows healthy and unhealthy.
 
 
 
