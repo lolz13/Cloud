@@ -1,9 +1,11 @@
 Login into the AWS console
+In the left menu go to key pair
+Click on create key pair
+Enter the key pair name as any, in file format change to  .ppk and save it. The ppk file will be downloaded
 Choose the EC2 instances
 Choose an Amazon machine image as Amazon Linux 2 AMI( 1st in the list) 
 Leave as it is and go to the next steps(tags, storage, configure security)
-Create a new key pair
-Click Download key-pair 
+Choose the existing key pair, as you save before 
 Click on launch instance.
 
 
@@ -13,20 +15,12 @@ Ctrl +alt+t
 
 sudo apt install putty-tools
  
-cd Downloads
-sudo puttygen key.pem -o key.ppk -O private
-sudo puttygen key.pem -o key.ppk -O public
-sudo  chmod   777 key.ppk
-
 
 Putty
 Copy the Public IPV4 address for a currently running instance
 Then open the putty and paste the public IP4 address for the currently running instance in Hostname
-In the left menu click SSH, choose Auth, browse the saved file(.ppk) in downloaded and click open.
+In the left menu click SSH, choose Auth, browse the saved file(.ppk) from downloads and click open.
 Then a terminal is opened 
 Wait for a few minutes, click accept
 enter this command: ec2-user 
-
-
-
 
