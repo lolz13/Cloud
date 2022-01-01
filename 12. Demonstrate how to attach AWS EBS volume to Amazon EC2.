@@ -1,32 +1,44 @@
+ 
+ 
 Login into the AWS console.
-Click on launch instances, then click next for further steps like tags, storage, configure, etc.
-Create a new key pair and click on launch instance.
-Click on download the key-pair of the instance and launch the instance.
-Look at the availability region of the currently running instance
-Select ‘Volumes’ from the menu on the left and click create volume.
-Create volume - choose the availability zone correctly for current running instance
-After created, right-click the created volume and choose attach volume, inside this under instance choose the current running instance.
+ 
+In services choose EC2
 
+Go to key pair in the left menu
+Click create new key pair. 
+
+Enter the key pair name as any, in file format choose  .ppk and click on save. .ppk file will be downloaded
+
+Click on launch instances, then click next for further steps like tags, storage, configure, etc.
+
+Choose the created key pair and click on launch instance.
+
+
+Select ‘Volumes’ from the menu on the left and click create volume.
+
+Create volume - choose the availability zone correctly for the instance running
+
+After created, right-click and attach the volume to the currently running instances.
 
 
 
 **************************If mam asked to mount the volume using Putty***************
 
+
 To open putty in ubuntu:
 In Ubuntu:
 Ctrl +alt+t  
-sudo apt install putty-tools
 
-cd Downloads
-sudo puttygen key.pem -o key.ppk -O private
-sudo puttygen key.pem -o key.ppk -O public
-sudo  chmod   777 key.ppk
 
 Putty
-Copy the Public IPV4 address of the currently running instance.
 Then open the putty and enter the IP address of created instances.
 In the left menu click SSH, choose Auth, browse the saved file and click open.
 Then a terminal is opened  ec2-user enter this command.
+
+
+
+
+
 
 Commands in putty:
 df -h ( to check disk space)
