@@ -1,0 +1,50 @@
+Login into the AWS console 
+Click on launch instances, then click next for further steps like tags, storage, configure, etc.
+Create a new key pair 
+Click on download key pair
+click on launch instances
+Look on the availability Zone for current running instances
+Choose target groups in the side menu
+In the target group choose the instance, enter the target group name as any
+Click on next, choose the instance 
+Click include as pending below
+Then click on create target group
+Choose load balancer in the side menu
+Click Create a load balancer
+Choose application load balancer, click create
+Type the load balancer name as any
+Choose the minimum 2 availability zone(one as same as instance zone)
+In listeners and routing, choose the target group that you have created now
+Then click on  create a load balancer
+The load balancer is created successfully
+
+Open the putty:
+In Ubuntu to open putty:(commands)
+Ctrl +alt+t  
+sudo apt install putty-tools
+cd Downloads
+sudo puttygen key.pem -o key.ppk -O private
+sudo puttygen key.pem -o key.ppk -O public
+Sudo chmod  777 key.ppk
+Putty
+Copy the Public IPV4 address for the currently running instance
+
+Then open the putty and enter the Public IPV4 address of the currently created instance.
+In the left menu click SSH, choose Auth, browse the saved file(.ppk) in downloads and click open.
+The terminal is open enter accept in pop up
+Then enter the command in terminal  ec2-user
+
+Commands in putty:
+sudo su
+yum install httpd (give yes if asks)
+sudo systemctl enable httpd
+sudo systemctl start httpd
+cd /var/www/html
+vim index.html
+Copy-paste the HTML document:
+Escape:wq  to save the HTML file in putty
+Go to security in the left menu, create a security group in that for inbound key type as HTTP and source as anywhere IPV4 and outbound key as all traffic and source as anywhere IPV4
+HTTP - destination IP as anywhere IPV4
+Outbound - Any traffic - destination IP as anywhere IPV4
+Then open the public DNS in the browser, the html file loaded was displayed
+
