@@ -1,5 +1,13 @@
 Login into the AWS console 
-Click on launch instances, then click next for further steps like tags, storage, configure, etc.
+Click on launch instances
+Select  AMI machine Ist one
+Click on next, configure instance details
+In step 3: configure instance details, in subnet column choose any one of the subnet in the dropdown menu
+Then cick next add storage
+Then click next add tags
+Then click next configure security group
+In step 6: configure security group, click add rule, add type HTTP in source change the custom as anywhere (choose in the drop down menu) for both SSH and HTTP
+Click review and launch
 Create a new key pair 
 Click on download key pair
 click on launch instances
@@ -35,16 +43,28 @@ The terminal is open enter accept in pop up
 Then enter the command in terminal  ec2-user
 
 Commands in putty:
+        
 sudo su
 yum install httpd (give yes if asks)
 sudo systemctl enable httpd
 sudo systemctl start httpd
 cd /var/www/html
 vim index.html
-Copy-paste the HTML document:
-Escape:wq  to save the HTML file in putty
-Go to security in the left menu, create a security group in that for inbound key type as HTTP and source as anywhere IPV4 and outbound key as all traffic and source as anywhere IPV4
-HTTP - destination IP as anywhere IPV4
-Outbound - Any traffic - destination IP as anywhere IPV4
-Then open the public DNS in the browser, the html file loaded was displayed
+  Click the Insert icon on the keyboard
+  Go to this link copy  the html code(https://www.geeksforgeeks.org/html-course-first-web-page-printing-hello-world/)
+ Right-click in the terminal and paste the html code.
+ Enter escape after that enter:wq
+Go to security in the left menu, create a security group in that for inbound key type as HTTP and source type as anywhere IPV4 and outbound key as all traffic and destination type as anywhere IPV4
+Go to the instance, right-click and go to  security, in that choose change security groups
+Inside change security groups, in the associated security group, remove the already attached security group.
+In the search bar, search for the security group that you have created now and click on add security group
+Then click Save.
+Then open the public IPV4 DNS in the browser, the html file loaded was displayed
+
+
+ #!bin/bash
+yum install httpd -y
+service httpd start
+cd /var/www/html
+echo ‘welcome!’> /var/www/html/index.html  
 
