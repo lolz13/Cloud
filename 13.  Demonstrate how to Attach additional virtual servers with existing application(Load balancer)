@@ -1,4 +1,6 @@
 Login into the AWS console 
+In services choose EC2 instance.
+Click on launch instance
 Select  AMI machine Ist one
 Click on next, configure instance details
 In step 3: configure instance details, in subnet column choose any one of the subnet in the dropdown menu
@@ -12,7 +14,7 @@ Click on download key pair
 click on launch instances
 Look on the availability Zone for current running instances
 Choose target groups in the side menu
-In the target group choose the instance, enter the target group name as any
+In the target group choose the create target group, enter the target group name as any
 Click on next, choose the instance 
 Click include as pending below
 Then click on create target group
@@ -25,6 +27,7 @@ In listeners and routing, choose the target group that you have created now
 Then click on  create a load balancer
 The load balancer is created successfully
 
+output as load balancer page
 
 
 If mam ask to show healthy in target group
