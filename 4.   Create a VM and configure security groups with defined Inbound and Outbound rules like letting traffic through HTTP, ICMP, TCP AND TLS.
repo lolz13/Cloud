@@ -7,9 +7,9 @@ Enter the security group name at your convenience.
 Enter description as any
 Edit the inbound and outbound rules
 In the inbound rule, click add a rule, choose type as HTTP and source type as anywhere IPV4 in the dropdown
-Click on add rule and edit the inbound rules for chosen source type as All ICMP IPV4 in the dropdown
-Click on add rule and edit the inbound rules for chosen source type as TLS in the dropdown
-Click on add rule and edit the inbound rules for chosen source type as All TCP in the dropdown
+Click on add rule and edit the inbound rules for chosen type as All ICMP IPV4 and source type as  IPV4 in the dropdown, in source give 0.0.0.0/0
+Click on add rule and edit the inbound rules for chosen  type as TLS and  source type as anywhere IPV4 in the dropdown
+Click on add rule and edit the inbound rules for chosen  type as All TCP and  source type as anywhere IPV4 in the dropdown
 In the outbound rule, TYPE as all traffic choose destination type as anywhere IPV4 in the dropdown
 Then click on create security groups
 Go to instances right-click the instances
