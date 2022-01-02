@@ -41,13 +41,13 @@ Then a terminal is opened  ec2-user enter this command.
 
 
 Commands in putty:
-df -h ( to check disk space)
-lsblk (to list out all the block devices)
-sudo file -s   /dev/xvdf - volume has any data
-It shows output “/dev/xvdf: data”, which means your volume is empty.
-sudo mkfs -t xfs   /dev/xvdf
-Sudo mkdir  /newvolume  -  create a directory
-Sudo mount   /dev/xvdf   /newvolume/   - mount the newvolume
+df -h     ( to check disk space)
+lsblk      (to list out all the block devices)
+sudo file -s /dev/xvdf         volume has any data
+   - It shows output “/dev/xvdf: data”, which means your volume is empty.
+sudo mkfs -t xfs /dev/xvdf
+Sudo mkdir /newvolume          create a directory
+Sudo mount /dev/xvdf /newvolume/       mount the newvolume
 cd /newvolume
 df -h
 
