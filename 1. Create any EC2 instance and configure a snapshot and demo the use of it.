@@ -12,7 +12,7 @@ Then the instances started running
 Right-click on the currently running instances, in that choose image and templates, in this choose to create image option in that. 
 Enter any image name(as per your wish) and description(any) then click on create an image. 
 Then go to AMI  in the left menu, the created image is loading
-Go to the instances and choose launch instances, that choose MyAMIs in the left menu, here it shows the image that you have created. 
-Select that image and proceed for further steps until launch instances.from(5 to 7). 
+Go to the instances and choose launch instances, in that choose MyAMIs in the left menu, here it shows the image that you have created.(if not shown wait for few minutes and reload) 
+Select that image and proceed for further steps untill launch instances from(5 to 7). 
 I have backup the instances that I have created.
 
