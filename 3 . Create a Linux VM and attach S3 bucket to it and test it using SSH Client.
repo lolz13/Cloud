@@ -44,6 +44,10 @@ Click on accept
 
 Then enter this command ec2-user 
 
+Output: putty app after connecting ec2
+
+
+
 Choose the S3 bucket in the services
 Click create bucket
 Enter bucket name as any name
@@ -51,5 +55,8 @@ Uncheck block all public access
 Check-in the I acknowledge that the current settings.
 Enable the bucket versioning
 Then click create a bucket
+
+
+Output : S3 bucket creation page
 
 
