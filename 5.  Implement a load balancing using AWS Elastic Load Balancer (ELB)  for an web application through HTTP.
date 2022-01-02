@@ -70,6 +70,9 @@ The terminal is open enter accept in pop up
 
 Then enter the command in terminal  ec2-user
 
+
+Output : Load balancer page
+
 Commands in putty:
         
 sudo su
