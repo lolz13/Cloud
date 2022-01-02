@@ -5,9 +5,8 @@ In this choose multi-factor authentication(MFA)
 Click on activate MFA
 Choose virtual MFA and click create
 Then click on show QR code
-Install the authentication app on your android mobile
-Scan the QR code
-Enter the code displayed in the authentication app(MFA Code 1 And MFA Code 2)
+Install the authenticator app on your android mobile
+Scan the QR code7
 After scanning the QR code, it displays a code enter that code in MFA code 1
 Then wait for a few minutes, the current code disappears and a new code will appear, enter this code in MFA code 2
 Then click on assign MFA
@@ -19,6 +18,12 @@ While login you will be asked MFA code
 Go to the authentication app on your mobile, enter the code displayed in your app.
 Click on submit.
 Multi-factor authentication is successfully added to your account.
+
+Output shown to mam:
+In the top bar, click on your name
+Under this click security credentials 
+In this choose multi-factor authentication(MFA) -  show this page as output
+
 
 
 
