@@ -1,8 +1,9 @@
 Login into the AWS console
+Choose EC2 instance in services
 In the left menu go to key pair
 Click on create key pair
-Enter the key pair name as any, in file format change to  .ppk and save it. The ppk file will be downloaded
-Choose the EC2 instances
+Enter the key pair name as any, in file format change to  .ppk and click create key pair. The ppk file will be downloaded
+Choose the  instances in left menu, click on launch instance
 Choose an Amazon machine image as Amazon Linux 2 AMI( 1st in the list) 
 Leave as it is and go to the next steps(tags, storage, configure security)
 Choose the existing key pair, as you save before 
@@ -14,6 +15,7 @@ Ctrl +alt+t
 
 
 sudo apt install putty-tools
+if ask for passowrd :  enter "ubuntu" as a password
  
 
 Putty
