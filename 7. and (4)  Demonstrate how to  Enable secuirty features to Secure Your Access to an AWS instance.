@@ -2,7 +2,6 @@ Login into the AWS console
 Click on launch instances, then click next for further steps like tags, storage, configure, etc.
 Create a new key pair and click on launch instances
 Then go to the security groups
-Click on the outbound rule, edit the outbound rule, and set as all traffic allowed
 Edit the inbound 
 In inbound choose type as HTTP and SOURCE as anywhere IPV4
 In outbound TYPE as all traffic destination as anywhere IPV4
