@@ -28,3 +28,6 @@ Then a terminal is opened
 Wait for a few minutes, click accept
 enter this command: ec2-user 
 
+
+Output - in the putty app after the connection of the ec2-user and instance page
+
