@@ -79,11 +79,9 @@ commands in putty:
 aws s3api create-bucket --bucket cfghjk --region eu-west-1 --create-bucket-configuration LocationConstraint=eu-west-1
 
 
-ls
 
-Output: putty app after these commands
+Output: if you open the s3 bucket, a new file is created
 
-Output : S3 bucket creation page
 
 
 
