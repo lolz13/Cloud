@@ -31,14 +31,14 @@ enter this command: ec2-user
 
 
 After connecting the instance in putty
-   (commands enter in putty to install mysql)
-ec2-user
+   (commands to enter in putty to install mysql)
+
 sudo yum update -y && sudo yum install mysql-server -y
 sudo yum install mariadb-server -y
 sudo systemctl enable --now mariadb
 sudo mysql secure installation
 sudo mysql -u root
-Use mysql
+use mysql
 
 
 
