@@ -19,6 +19,8 @@ if ask for passowrd :  enter "ubuntu" as a password
  
 
 Putty
+
+Go to the instances.
 Copy the Public IPV4 address for a currently running instance
 Then open the putty and paste the public IP4 address for the currently running instance in Hostname
 In the left menu click SSH, choose Auth, browse the saved file(.ppk) from downloads and click open.
