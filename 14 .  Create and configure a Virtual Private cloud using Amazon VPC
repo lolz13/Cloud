@@ -12,7 +12,7 @@ Name the subnet as per your convenience,
 Check in the IPV6 only
 In the IPV6 CIDR block in the second line there is space to enter a number, enter 04
 Then click create a subnet.
-Then go to the routing table, enter the name, add the VPC that you have created. 
+Then go to the routing table,click create route table, enter the name, add the VPC that you have created. 
 Then click on create router table.
 Successfully connected  subnets to the routing table with a VPC.
 Go to the internet gateway, click on create internet gateway.
