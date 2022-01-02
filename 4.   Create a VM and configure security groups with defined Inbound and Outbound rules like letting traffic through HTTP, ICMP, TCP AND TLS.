@@ -14,10 +14,11 @@ In the outbound rule, TYPE as all traffic choose destination type as anywhere IP
 Then click on create security groups
 Go to instances right-click the instances
 Go to actions choose security groups, click change security groups
-Then associate the new security groups that you have created- search for newly created security groups and add in them.
+Then associate the new security groups that you have created- search for newly created security groups and click add security group, remove the unnecessary groups. 
+Then click save
 
+output: In the instance page, click on current running instance, go to security shows the rules added
 
-output: In security group page show the inbound rules added
 
 
 
