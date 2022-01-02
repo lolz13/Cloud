@@ -1,5 +1,17 @@
 Login into the AWS console
 
+
+Choose the S3 bucket in the services
+Click create bucket
+Enter bucket name as any name
+Uncheck block all public access
+Check-in the I acknowledge that the current settings.
+Enable the bucket versioning
+Then click create a bucket
+Upload any file in this bucket
+Click the uploaded file, scroll down in the last there is a object URL copy this and paste it in a notepad
+
+
 Choose the EC2 instances. 
 
 In the side menu, choose key pair
@@ -14,7 +26,10 @@ Choose an Amazon machine image as Amazon Linux 2 AMI( 1st in the list)
 
 Leave as it is and go to the next steps
 
-Click next until configure security group
+Click next until configuring security group
+
+In step 6: configure security group, click add rule, add type HTTP in source change the custom as anywhere (choose in the drop down menu) for both SSH and HTTP
+
 
 Then click on Review and launch. 
 
@@ -31,32 +46,33 @@ Ctrl +alt+t   ( To open terminal)
 sudo apt install putty-tools
 
 
-Putty  (Putty app is opened)
+putty  (putty app is opened)
 
 Copy the Public IPV4 address of the currently running instance.
 
 Then open the putty and enter the IPV4 address of created instances.
 In the left menu click SSH, choose Auth, browse the saved file(.ppk file) in downloads and click open.
 
-Then a terminal is opened , wait for few seconds to load
+Then a terminal is opened, wait for a few seconds to load
 
 Click on accept
 
 Then enter this command ec2-user 
 
-Output: putty app after connecting ec2
+Commands in putty:
 
+sudo su
+yum update -y
+pwd
+ls
+wget paste tha object url that you copied in the notepad.
+pwd
+ls
 
-
-Choose the S3 bucket in the services
-Click create bucket
-Enter bucket name as any name
-Uncheck block all public access
-Check-in the I acknowledge that the current settings.
-Enable the bucket versioning
-Then click create a bucket
-
+Output: putty app after these commands
 
 Output : S3 bucket creation page
+
+
 
 
