@@ -40,6 +40,8 @@ sudo mysql secure installation
 sudo mysql -u root
 use mysql
 
+output - putty app after execyting those commands
+
 
 
 
