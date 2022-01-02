@@ -6,7 +6,6 @@ Click on the outbound rule, edit the outbound rule, and set as all traffic allow
 Check the inbound rules
 Edit the inbound and outbound rules
 In inbound choose type as HTTP and SOURCE as anywhere IPV4
-Click on add rule and edit the inbound rules for chosen types as All ICMP IPV4
 In outbound TYPE as all traffic source as anywhere IPV4
 Save the security groups
 Go to instances right-click the instances
