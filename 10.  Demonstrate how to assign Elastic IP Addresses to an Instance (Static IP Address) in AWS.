@@ -17,3 +17,7 @@ IP address has been associated successfully
 Then you go to the instances if you click the currently running instances, the elastic IP address is assigned.
 Terminate the instances.
 
+
+output( In the instance page, if you scroll right, under elastic IP it shows the associated Elastic IP)
+
+
