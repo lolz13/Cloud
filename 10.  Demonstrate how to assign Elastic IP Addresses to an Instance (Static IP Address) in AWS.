@@ -11,7 +11,7 @@ Let wait for a few minutes to start the instances
 Then go to the elastic IPS in the left menu
 Here click on allocate Elastic IP address. 
 Leave as it is and click allocate. 
-The elastic IP address was allocated successfully. 
+The elastic IP address is allocated successfully. 
 Click the created elastic IP and go to  actions and click associate elastic IP address, in this choose the currently running instances, then click associate
 IP address has been associated successfully
 Then you go to the instances if you click the currently running instances, the elastic IP address is assigned.
