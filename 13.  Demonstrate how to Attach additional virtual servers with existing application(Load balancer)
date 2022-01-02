@@ -1,39 +1,78 @@
+
+
 Login into the AWS console 
-In services choose EC2 instance.
-Click on launch instance
+
+Choose EC2 in the service. 
+
+In the left menu go to key pair
+
+Click on create key pair
+
+Enter the key pair name as any, in file format change to  .ppk and save it. The ppk file will be downloaded
+
+Click on launch instances
+
+(create 2 instances) 
 Select  AMI machine Ist one
 Click on next, configure instance details
+
 In step 3: configure instance details, in subnet column choose any one of the subnet in the dropdown menu
+at last in user data 
+paste this code given below
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
+
+
 Then cick next add storage
+
 Then click next add tags
+
 Then click next configure security group
+
 In step 6: configure security group, click add rule, add type HTTP in source change the custom as anywhere (choose in the drop down menu) for both SSH and HTTP
+
 Click review and launch
-Create a new key pair 
-Click on download key pair
+
+Choose the existing key pair, as you save before 
+
 click on launch instances
+Wait untill 2/2 check pass
+
+copy and paste the public IPV4 address in the chrome, it will display the html page
+
 Look on the availability Zone for current running instances
+
 Choose target groups in the side menu
-In the target group choose the create target group, enter the target group name as any
-Click on next, choose the instance 
+
+In the target group choose the instance, enter the target group name as any
+
+Click on next, choose the  two instance 
+
 Click include as pending below
+
 Then click on create target group
 Choose load balancer in the side menu
+
 Click Create a load balancer
 Choose application load balancer, click create
+
 Type the load balancer name as any
 Choose the minimum 2 availability zone(one as same as instance zone)
+security group same as in the instances
 In listeners and routing, choose the target group that you have created now
+
+
 Then click on  create a load balancer
 The load balancer is created successfully
+wait untill in the target group, if you click on created target group under target, helath status pass.
+In load balancer, if you click the created load balancer, copy paste the DNS name in the chrome, it will display the html page.(output) IP address will change
 
-output as load balancer page
 
 
-If mam ask to show healthy in target group
-     - Go to the target groups in left menu
-      - Click on the created target group 
-        - In that, if you scrolls down, in total targets it shows healthy and unhealthy.
 
 
 
